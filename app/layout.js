@@ -1,9 +1,8 @@
-import Header from "@/components/Header";
 import { Inter } from "next/font/google";
 import { ClerkProvider } from '@clerk/nextjs'
 
-
 import "./globals.css";
+import Header from "@/components/Header";
 
 export const metadata = {
   title: "GemCar AI",
