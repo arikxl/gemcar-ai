@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { ArrowBigLeft, CarFront, Heart, Layout } from 'lucide-react';
-import { SignedIn, SignedOut, SignUpButton, UserButton } from '@clerk/nextjs'
+import { SignedIn, SignedOut, SignInButton, SignUpButton, UserButton } from '@clerk/nextjs'
 
 import { Button } from './ui/button';
 
@@ -68,18 +68,17 @@ const Header = async ({ isAdminPage = false }) => {
 
 
                     <SignedOut>
-                        <SignUpButton forceRedirectUrl='/'>
+                        <SignInButton forceRedirectUrl='/'>
                             <Button variant='outline'>
                                 Login
                             </Button>
-                        </SignUpButton>
+                        </SignInButton>
                     </SignedOut>
 
                     <SignedIn>
-
                         <UserButton appearance={{
                             elements: {
-                                avatarBox:'w-14 h-14'
+                                avatarBox:'w-20 h-20'
                             }
                         }}/>
                     </SignedIn>

@@ -4,10 +4,6 @@ export default function Home() {
   return (
     <div >
         Arik
-
-      <br />
-      
-      <Button variant='destructive'>test</Button>
     </div>
   );
 }
