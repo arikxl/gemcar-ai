@@ -125,3 +125,20 @@
 button{
   cursor: pointer;
 }
+
+
+.dotted-bg{
+  background-color: #16223c;
+  background-image: radial-gradient(rgba(255,255,255, 0.3) 1px, transparent 1px);
+  background-size: 30px 30px;
+}
+
+
+@layer utilities{
+
+
+  .gradient-title{
+    @apply bg-gradient-to-br from-cyan-500 to-green-200 font-extrabold tracking-tighter pr-2 pb-2 text-transparent bg-clip-text
+  }
+
+}
