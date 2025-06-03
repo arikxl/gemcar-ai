@@ -46,7 +46,7 @@ const CarCard = ({ car }) => {
             <CardContent className='p-4'>
                 <div className='flex flex-col mb-2'>
                     <h3 className='text-lg font-bold line-clamp-1'>{car.make} {car.model}</h3>
-                    <span className='text-xl font-bold text-blue-600'>${car.price.toLocaleString()}</span>
+                    <span className='text-xl font-bold text-blue-600'>${car.price.toLocaleString('he-IL')}</span>
                 </div>
 
                 <div className='text-gray-600 mb-2 flex items-center'>
@@ -60,7 +60,7 @@ const CarCard = ({ car }) => {
 
                 <div className='flex flex-wrap gap-1 mb-4'>
                     <Badge variant='outline' className='bg-gray-50'>{car.bodyType}</Badge>
-                    <Badge variant='outline' className='bg-gray-50'>{car.mileage.toLocaleString()}</Badge>
+                    <Badge variant='outline' className='bg-gray-50'>{car.mileage.toLocaleString('he-IL')}</Badge>
                     <Badge variant='outline' className='bg-gray-50'>{car.color}</Badge>
                 </div>
 

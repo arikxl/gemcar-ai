@@ -1,13 +1,21 @@
+
 import { Button } from "@/components/ui/button";
-import WaitListPage from "./waitlist/page";
+// import WaitListPage from "./waitlist/page";
 import HomeSearch from "@/components/HomeSearch";
 import { Calendar, Car, ChevronRight, Shield } from "lucide-react";
 import { bodyTypes, carMakes, faqItems, featuredCars } from "@/lib/data";
 import CarCard from "@/components/CarCard";
 import Link from "next/link";
 import Image from "next/image";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+// import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { SignedOut } from "@clerk/nextjs";
+import AccordionWrapper from "@/components/AccordionWrapper";
+
+import dynamic from 'next/dynamic'
+
+// const AccordionWrapper = dynamic(() => import('@/components/AccordionWrapper'), {
+//   ssr: false,
+// })
 
 export default function Home() {
   return (
@@ -153,7 +161,8 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <h2 className="text-2xl font-bold text-center mb-8">Frequently Asked Questions</h2>
 
-          <Accordion type='single' collapsible className='w-full'>
+          <AccordionWrapper />
+          {/* <Accordion type='single' collapsible className='w-full'>
             {faqItems.map((item, idx) => (
 
               <AccordionItem key={idx} value={`item-${idx}` }>
@@ -165,7 +174,7 @@ export default function Home() {
                   </AccordionContent>
               </AccordionItem>
             ))}
-          </Accordion>
+          </Accordion> */}
         </div>
       </section>
 
