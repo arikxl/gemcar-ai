@@ -1,7 +1,7 @@
 import { getAdmin } from '@/actions/admin'
 import Header from '@/components/Header';
 import { notFound } from 'next/navigation';
-import SideBar from './components/SideBar';
+import SideBar from './_components/SideBar';
 
 const AdminLayout = async ({children}) => {
 
@@ -17,7 +17,7 @@ const AdminLayout = async ({children}) => {
             <div className='flex flex-col h-full w-56 top-26 fixed inset-y-0 z-50'>
                 <SideBar />
             </div>
-            <main className='md:pl-56 pt-[110px] h-full'>{ children}</main>
+            <main className='md:pl-56 pt-[100px] h-full'>{ children}</main>
         </div>
     )
 }
