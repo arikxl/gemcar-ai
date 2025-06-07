@@ -32,7 +32,7 @@ CREATE TABLE "Car" (
     "model" TEXT NOT NULL,
     "year" INTEGER NOT NULL,
     "price" DECIMAL(10,2) NOT NULL,
-    "mileage" INTEGER NOT NULL,
+    "km" INTEGER NOT NULL,
     "color" TEXT NOT NULL,
     "fuelType" TEXT NOT NULL,
     "transmission" TEXT NOT NULL,

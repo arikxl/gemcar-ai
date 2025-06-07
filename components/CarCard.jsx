@@ -60,7 +60,7 @@ const CarCard = ({ car }) => {
 
                 <div className='flex flex-wrap gap-1 mb-4'>
                     <Badge variant='outline' className='bg-gray-50'>{car.bodyType}</Badge>
-                    <Badge variant='outline' className='bg-gray-50'>{car.mileage.toLocaleString('he-IL')}</Badge>
+                    <Badge variant='outline' className='bg-gray-50'>{car.km.toLocaleString('he-IL')}</Badge>
                     <Badge variant='outline' className='bg-gray-50'>{car.color}</Badge>
                 </div>
 

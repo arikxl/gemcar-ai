@@ -38,7 +38,7 @@ model Car{
   model             String
   year              Int
   price             Decimal            @db.Decimal(10, 2)
-  mileage           Int
+  km           Int
   color             String
   fuelType          String
   transmission      String

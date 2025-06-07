@@ -47,7 +47,7 @@ export async function processCarImageWithAI(file) {
         3. Year (approximately)
         4. Color
         5. Body type (SUV, Sedan, Hatchback, etc.)
-        6. Mileage
+        6. km
         7. Fuel type (your best guess)
         8. Transmission type (your best guess)
         9. Price in USD(your best guess)
@@ -60,7 +60,7 @@ export async function processCarImageWithAI(file) {
           "year": 0000,
           "color": "",
           "price": "",
-          "mileage": "",
+          "km": "",
           "bodyType": "",
           "fuelType": "",
           "transmission": "",
@@ -91,7 +91,7 @@ export async function processCarImageWithAI(file) {
                 "color",
                 "bodyType",
                 "price",
-                "mileage",
+                "km",
                 "fuelType",
                 "transmission",
                 "description",
@@ -209,7 +209,7 @@ export async function addCar({ carData, images }) {
                 model: carData.model,
                 year: carData.year,
                 price: carData.price,
-                mileage: carData.mileage,
+                km: carData.km,
                 color: carData.color,
                 fuelType: carData.fuelType,
                 transmission: carData.transmission,
